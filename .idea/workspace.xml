@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b9617c4-65d5-4c08-847d-36eec461c648" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8bbb99fc-1128-4017-90a8-4729c3fc0ae7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8bbb99fc-1128-4017-90a8-4729c3fc0ae7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Category_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Category_product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +132,7 @@
       <workItem from="1574654057479" duration="2377000" />
       <workItem from="1574657372647" duration="847000" />
       <workItem from="1574659564772" duration="582000" />
-      <workItem from="1574661204388" duration="2086000" />
+      <workItem from="1574661204388" duration="4095000" />
     </task>
     <servers />
   </component>

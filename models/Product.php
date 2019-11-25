@@ -11,10 +11,9 @@ class Product extends Model
     //object properties
 
     public $id,
-           $name,
+           $product_name,
            $description,
            $price,
-           $category_id,
            $category_name,
            $created_at;
 }
