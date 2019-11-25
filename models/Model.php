@@ -191,7 +191,7 @@ abstract class Model extends Db
 
         $sql  = "INSERT INTO {$this->table}(`".implode('`,`', $keys)."`) VALUES({$values})";
 
-        //return $fields; die(1);
+
         if(!$this->query($sql, $fields)->error()){
 
             return true;
@@ -289,6 +289,9 @@ abstract class Model extends Db
         echo $name," doesn't exist in this class";
     }
 
+    /**
+     * @return mixed
+     */
     function lastId(){
         return $this->action_get_last_id('SELECT id ', $this->table)
                     ->first()

@@ -16,24 +16,26 @@ class ProductController extends Controller
     function create(){
 
         $post = json_decode(file_get_contents('php://input'), true);
+        //dd($post);
 
         $product_name         = $post['product_name'];
         $description          = $post['description'];
         $price                = (int)$post['price'];
-        $category_id          = (int)$post('category_id');
+        $category_id          = (int)$post['category_id'];
         $created_at           = date('Y-m-d H:i:s');
         $updated_at           = date('Y-m-d H:i:s');
 
 
         $product  = new Product();
-        $category_products = new Category_products();
+        $category_product = new Category_product();
 
         $insert_product = $product->insert(['product_name' => $product_name, 'description' => $description,
                                             'price' => $price, 'created_at' => $created_at, 'updated_at' => $updated_at
         ]);
 
-        $insert_product_category = $category_products->insert(['product_id' => $product->lastId(), 'category_id' => $category_id]);
 
+
+        $insert_product_category = $category_product->insert(['product_id' => $product->lastId(), 'category_id' => $category_id]);
 
 
         $result = [];
