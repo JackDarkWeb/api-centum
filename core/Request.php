@@ -22,7 +22,7 @@ class Request
 
     function __construct()
     {
-        $this->url = $_SERVER['PATH_INFO'];
+        $this->url = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : (isset($_SERVER['ORIG_PATH_INFO']) ? $_SERVER['ORIG_PATH_INFO'] : '');
 
         #Paginte
         if(isset($_GET['page'])){
