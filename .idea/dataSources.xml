@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="api_centum@localhost" uuid="8bbb99fc-1128-4017-90a8-4729c3fc0ae7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/api_centum</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="GMT+2" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

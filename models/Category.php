@@ -1,0 +1,11 @@
+<?php
+
+
+class Category extends Model
+{
+    protected $table            = 'categories',
+              $table_id         = 'category_id',
+              $join_table       = 'products',
+              $join_table_id    = 'product_id',
+              $pivot_table      = 'category_products';
+}
