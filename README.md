@@ -1,13 +1,23 @@
 # api-centum
 
 => UML.mwb
+
+
    This file contains the uml schema of the three tables.
+   
+   
    * Insertions of both categories
+   
+   
        INSERT INTO `categories`(`category_name`, `created_at`, `updated_at`) VALUES (`mobiles`,`2019-11-24 7:10:25`,`2019-11-24 7:10:25`),
                                                                                     (`tablets`,`2019-11-24 7:10:25`,`2019-11-24 7:10:25`)
    
 => core/setting/Config
+
+
     The Config class is used to configure the database. For example
+    
+    
     class Config
     {
         static $debug = 1;
@@ -32,11 +42,13 @@
 => controllers
     This folder contains all the controllers and each controller contains the possible actions of the http requests.
     For example ProductController
-    <?php
+   
 
 
 class ProductController extends Controller
 {
+
+
     function index(){
 
         $product   = new Product();
@@ -160,13 +172,18 @@ class ProductController extends Controller
 
 
 => models
-   This folder contains all category and product entities.
-   For example
-    <?php
 
+
+   This folder contains all category and product entities.
+   
+   
+   For example
+ 
 
 class Product extends Model
 {
+
+
 
     protected $join_table    = 'categories';
     protected $join_table_id = 'category_id';
@@ -187,34 +204,57 @@ class Product extends Model
    *For category
    
    // return all records
+   
+   
     GET /category
 
   // return a specific record
+  
+  
    GET /category/show/{id}
 
   // create a new record
+  
+  
    POST /category/create
+   
+   
     {
       "product_name": "Mobiles",
     }
 
+
   // update an existing record
+  
+  
    PUT /category/update/{id}
+   
+   
 
   // delete an existing record
+  
+  
   DELETE /category/delete/{id}
   
   
   *For product
   
     // return all records
+    
+    
     GET /product
 
   // return a specific record
+  
+  
    GET /product/show/{id}
 
   // create a new record
+  
+  
    POST /product/create
+   
+   
     {
      
       "category_id": "2",
@@ -224,9 +264,14 @@ class Product extends Model
    }
 
   // update an existing record
+  
+  
    PUT /product/update/{id}
+   
 
   // delete an existing record
+  
+  
   DELETE /product/delete/{id}
 
 
