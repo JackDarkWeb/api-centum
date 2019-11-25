@@ -32,7 +32,8 @@ function assets($file){
 
                 if(strlen($value) > 3){
 
-                    $extension_file[] = end(explode('.', $value));
+                   $t = explode('.', $value);
+                    $extension_file[] = end($t);
                 }
             }
 
